@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white;
+  }
+}
+
+#hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-position: center;
+  }
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-16 py-12;
+}
